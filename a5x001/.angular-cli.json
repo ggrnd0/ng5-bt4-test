@@ -5,8 +5,8 @@
   },
   "apps": [
     {
-      "root": "src",
-      "outDir": "dist",
+      "root": "src/main",
+      "outDir": "dist/main",
       "assets": [
         "assets",
         "favicon.ico"
@@ -19,6 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../../node_modules/font-awesome/css/font-awesome.css",
         "styles.css"
       ],
       "scripts": [],
@@ -36,15 +38,15 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json",
+      "project": "src/main/tsconfig.app.json",
       "exclude": "**/node_modules/**"
     },
     {
-      "project": "src/tsconfig.spec.json",
+      "project": "src/main/tsconfig.spec.json",
       "exclude": "**/node_modules/**"
     },
     {
-      "project": "e2e/tsconfig.e2e.json",
+      "project": "e2e/main/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
     }
   ],
